@@ -1,0 +1,269 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Custom Styles*/
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(58, 58, 110);
+    float: left;
+    vertical-align: middle;
+}
+
+.logoimg {
+    height: 30px;
+    width: 30px;
+}
+
+.logo {
+    float: left;
+    position: relative;
+    left: 150px;
+    top: 12px;
+}
+
+.bell {
+    float:right;
+    position: relative;
+    right: 350px;
+    top: 14px;
+    align-items: center;
+}
+
+.user {
+    height: 50px;
+    float: right;
+    position: relative;
+    right: 160px;
+    margin-top: 15px;
+    font-size: 20px;
+    color: grey;
+    align-items: center;
+}
+
+
+.userimg {
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+
+main {
+    width: 100%;
+    height: 800px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.navlinks {
+    width: 340px;
+    height: 50px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-left: 30px;
+    background-color: lightblue
+    line-height: normal;
+}
+
+a {
+   text-decoration: none;
+    
+}
+
+h4 {
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.logoutcont {
+    width: 340px;
+    height: 50px;
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-top: 220px;
+    background-color: white;
+
+}
+
+.logout {
+    margin-top: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+.icons {
+    height: 20px;
+    width: 20px;
+    margin-right: 4px;
+    margin-top: 2px;
+    vertical-align: middle;
+}
+
+h5 {
+    display: inline-block;
+    margin-bottom: 2px;
+    font-size: 20px;
+    margin-top: 5px;
+    vertical-align: middle;
+}
+
+nav {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: lightblue;
+    height: 650px;
+    width: 400px;
+    margin: 20px;
+    border: transparent 1px solid;
+    border-radius: 5%;  
+}
+
+.article {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: rgb(223, 238, 247);
+    height: 650px;
+    width: 700px;
+    margin: 20px;
+    border: transparent 1px solid;
+    border-radius: 10px;
+}
+
+.articleimg {
+    height: 300px;
+    width: 670px;
+    object-fit: cover;
+    border: transparent 1px solid;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.articlecont {
+    width: 95%;
+    height: 250px;
+    text-align: left;
+}
+
+p {
+    font-size: 22px;
+    margin-top: 10px
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+
+.readmoretxt {
+    width: 170px;
+    height: 40px;
+    margin-top: 1px;
+    background-color: green;
+    color: whitesmoke;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 525px;
+    border: transparent 1px solid;
+    border-radius: 10px;
+    box-shadow: 4px 6px 10px grey;
+}
+
+h3 {
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+
+footer {
+    height: 80px;
+    background-color: rgb(58, 58, 110);
+}
+
+small {
+    float: left;
+    margin-left: 150px;
+    margin-top: 30px;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+.socialmedia {
+    float: right;
+    margin-right: 100px;
+    word-spacing: 10px;
+    margin-top: 30px;
+}
+.social {
+    height: 20px;
+    width: 20px;
+    
+}
+
+/*Cleafix*/
+
+.clearfix::before .cleafix::after {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
